@@ -3,8 +3,16 @@ package RENDUS.Java.Exo5;
 public class Main {
     public static void main(String[] args) {
         Socket socket = new Socket();
-        socket.accept();
         socket.connect();
+        socket.read();
         socket.close();
+        socket.reset();
+        System.out.println("---");
+        socket.listen();
+        socket.accept();
+        socket.Configuration();
+        socket.close();
+        socket.reset();
+
     }
 }

@@ -32,4 +32,12 @@ public class Socket {
         this.state = state;
     }
 
+    public void reset(){
+        this.state.handleReset(this);
+    }
+
+    public void Configuration(){
+        this.state.handleConfiguration(this);
+    }
+
 }

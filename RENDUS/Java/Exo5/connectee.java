@@ -1,8 +1,8 @@
 package RENDUS.Java.Exo5;
 
-public class connectee extends SocketState {
+public class Connectee extends SocketState {
 
-    public connectee() {
+    public Connectee() {
     }
 
     public void handleRead(Socket socket) {

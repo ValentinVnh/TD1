@@ -6,8 +6,8 @@ public class Ecoute extends SocketState {
     }
 
     public void handleAccept(Socket socket) {
-        socket.setState(new connectee());
-        System.out.println("Socket Accept");
+        socket.setState(new Configuration());
+        System.out.println("Socket Config");
     }
 
     public void handleClose(Socket socket) {

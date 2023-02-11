@@ -20,4 +20,13 @@ public abstract class SocketState {
     public void handleClose(Socket socket) {
     }
 
+    public void handleReset(Socket socket) {
+    }
+
+    public void handleConfiguration(Socket socket){
+    }
+
+
+
+
 }

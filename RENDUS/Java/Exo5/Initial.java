@@ -12,7 +12,7 @@ public class Initial extends SocketState {
     }
 
     public void handleConnect(Socket socket) {
-        socket.setState(new connectee());
+        socket.setState(new Connectee());
         System.out.println("Socket Connect");
     }
 
