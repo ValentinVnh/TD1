@@ -1,6 +1,17 @@
-package RENDUS.Java.Exo5;
+package RENDUS.Test;
 
-public class Main {
+import RENDUS.Java.Exo5.*;
+
+//import org.junit.jupiter.api.Test;
+
+public class TestSocket {
+
+    //@Test
+    public void testSocket(){
+        
+
+    }
+
     public static void main(String[] args) {
         Socket socket = new Socket();
         socket.connect();
@@ -13,6 +24,6 @@ public class Main {
         socket.configuration();
         socket.close();
         socket.reset();
-
     }
+    
 }

@@ -36,7 +36,7 @@ public class Socket {
         this.state.handleReset(this);
     }
 
-    public void Configuration(){
+    public void configuration(){
         this.state.handleConfiguration(this);
     }
 
