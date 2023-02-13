@@ -1,4 +1,4 @@
-package RENDUS.Java.Exo5;
+package RENDUS.Java.Partie1;
 
 public class Fermee extends SocketState {
 

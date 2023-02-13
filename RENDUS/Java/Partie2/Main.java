@@ -1,17 +1,6 @@
-package RENDUS.Test;
+package RENDUS.Java.Partie2;
 
-import RENDUS.Java.Partie1.*;
-
-//import org.junit.jupiter.api.Test;
-
-public class TestSocket {
-
-    //@Test
-    public void testSocket(){
-        
-
-    }
-
+public class Main {
     public static void main(String[] args) {
         Socket socket = new Socket();
         socket.connect();
@@ -24,6 +13,6 @@ public class TestSocket {
         socket.configuration();
         socket.close();
         socket.reset();
+
     }
-    
 }

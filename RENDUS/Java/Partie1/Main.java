@@ -1,4 +1,4 @@
-package RENDUS.Java.Exo5;
+package RENDUS.Java.Partie1;
 
 public class Main {
     public static void main(String[] args) {
