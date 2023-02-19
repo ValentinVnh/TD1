@@ -1,31 +1,25 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
 import java.util.*;
 
-/**
- * 
- */
+
 public class Simulateur {
 
-    /**
-     * Default constructor
-     */
+    private Map<String, Commande> commandes;
+
+
     public Simulateur() {
+        commandes = new HashMap<String, Commande>();
     }
 
-    /**
-     * @param nom 
-     * @param commande Commande
-     */
     public void setCommand(String nom, Commande commande) {
-        // TODO implement here
+        commandes.put(nom, commande);
     }
 
-    /**
-     * @param nom
-     */
     public void executeCommande(String nom) {
-        // TODO implement here
+        commandes.get(nom).executer();
     }
+
+    public void undoCommande(String nom) {commandes.get(nom).undo();}
 
 }

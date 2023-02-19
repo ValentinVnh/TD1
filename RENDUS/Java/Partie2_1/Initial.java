@@ -1,9 +1,7 @@
-package RENDUS.Java.Partie2_1;
-
-import java.util.*;
+package Partie2_1;
 
 /**
- * 
+ *
  */
 public class Initial extends SocketState {
 
@@ -13,18 +11,16 @@ public class Initial extends SocketState {
     public Initial() {
     }
 
-    /**
-     * @param socket
-     */
+   @Override
     public void handleListen(Socket socket) {
-        // TODO implement here
+        socket.setState(new Ecoute());
+        System.out.println("Socket Listen");
     }
 
-    /**
-     * @param socket
-     */
+    @Override
     public void handleConnect(Socket socket) {
-        // TODO implement here
+        socket.setState(new Connectee());
+        System.out.println("Socket Connect");
     }
 
 }

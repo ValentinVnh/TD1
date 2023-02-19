@@ -1,4 +1,4 @@
-package RENDUS.Java.Partie1;
+package Partie1;
 
 public class Main {
     public static void main(String[] args) {

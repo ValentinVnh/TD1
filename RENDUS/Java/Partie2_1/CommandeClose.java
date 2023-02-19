@@ -1,16 +1,19 @@
-package RENDUS.Java.Partie2_1;
-
-import java.util.*;
+package Partie2_1;
 
 /**
- * 
+ *
  */
 public class CommandeClose extends CommandeGeneraleSocket {
 
     /**
      * Default constructor
      */
-    public CommandeClose() {
+    public CommandeClose(Socket socket) {
+        this.socket = socket;
     }
 
+    @Override
+    public void executer() {
+        socket.close();
+    }
 }

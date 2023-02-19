@@ -1,16 +1,25 @@
-package RENDUS.Java.Partie2_1;
-
-import java.util.*;
+package Partie2_1;
 
 /**
- * 
+ *
  */
 public class CommandeAccept extends CommandeGeneraleSocket {
+
 
     /**
      * Default constructor
      */
-    public CommandeAccept() {
+    public CommandeAccept(Socket socket) {
+        this.socket = socket;
     }
 
+    @Override
+    public void executer() {
+        socket.accept();
+    }
+
+    @Override
+    public void undo() {
+        socket.close();
+    }
 }

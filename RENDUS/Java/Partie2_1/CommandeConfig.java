@@ -1,16 +1,20 @@
-package RENDUS.Java.Partie2_1;
-
-import java.util.*;
+package Partie2_1;
 
 /**
- * 
+ *
  */
 public class CommandeConfig extends CommandeGeneraleSocket {
 
     /**
      * Default constructor
      */
-    public CommandeConfig() {
+    public CommandeConfig(Socket socket) {
+        this.socket = socket;
     }
 
+    @Override
+    public void executer() {
+        socket.configuration();
+    }
 }
+

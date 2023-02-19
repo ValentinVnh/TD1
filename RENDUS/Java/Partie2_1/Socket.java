@@ -1,77 +1,42 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
-import java.util.*;
-
-/**
- * 
- */
 public class Socket {
 
-    /**
-     * 
-     */
     private SocketState state;
 
-    /**
-     * Default constructor
-     */
     public Socket() {
+        this.state = new Initial();
     }
 
-    /**
-     * 
-     */
     public void listen() {
-        // TODO implement here
+        this.state.handleListen(this);
     }
 
-    /**
-     * 
-     */
     public void accept() {
-        // TODO implement here
+        this.state.handleAccept(this);
     }
 
-    /**
-     * 
-     */
     public void connect() {
-        // TODO implement here
+        this.state.handleConnect(this);
     }
 
-    /**
-     * 
-     */
     public void read() {
-        // TODO implement here
+        this.state.handleRead(this);
     }
 
-    /**
-     * 
-     */
     public void close() {
-        // TODO implement here
+        this.state.handleClose(this);
     }
 
-    /**
-     * 
-     */
-    public void config() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
     public void reset() {
-        // TODO implement here
+        this.state.handleReset(this);
     }
 
-    /**
-     * @param state
-     */
+    public void configuration() {
+        this.state.handleConfiguration(this);
+    }
+
     public void setState(SocketState state) {
-        // TODO implement here
+        this.state = state;
     }
-
 }

@@ -1,4 +1,4 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
 import java.util.*;
 
@@ -10,7 +10,13 @@ public class CommandeConnect extends CommandeGeneraleSocket {
     /**
      * Default constructor
      */
-    public CommandeConnect() {
+    public CommandeConnect(Socket socket) {
+        this.socket = socket;
+    }
+
+
+    public void execute() {
+        socket.connect();
     }
 
 }

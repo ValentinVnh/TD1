@@ -1,30 +1,20 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
-import java.util.*;
 
-/**
- * 
- */
 public class Connectee extends SocketState {
 
-    /**
-     * Default constructor
-     */
     public Connectee() {
     }
 
-    /**
-     * @param socket
-     */
+    @Override
     public void handleRead(Socket socket) {
-        // TODO implement here
+        System.out.println("Socket Read");
     }
 
-    /**
-     * @param socket
-     */
+    @Override
     public void handleClose(Socket socket) {
-        // TODO implement here
+        socket.setState(new Fermee());
+        System.out.println("Socket Close");
     }
 
 }

@@ -1,23 +1,16 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
-import java.util.*;
 
-/**
- * 
- */
+
 public class Fermee extends SocketState {
 
-    /**
-     * Default constructor
-     */
     public Fermee() {
     }
 
-    /**
-     * @param socket
-     */
-    public void handleReset(Socket socket) {
-        // TODO implement here
+    @Override
+    public void handleReset(Socket socket){
+        socket.setState(new Initial());
+        System.out.println("Socket Reset");
     }
 
 }

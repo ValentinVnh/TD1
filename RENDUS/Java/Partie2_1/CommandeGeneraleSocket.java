@@ -1,35 +1,26 @@
-package RENDUS.Java.Partie2_1;
-
-import java.util.*;
+package Partie2_1;
 
 /**
- * 
+ *
  */
 public class CommandeGeneraleSocket implements Commande {
 
     /**
-     * 
+     *
      */
     protected Socket socket;
 
-    /**
-     * Default constructor
-     */
     public CommandeGeneraleSocket() {
+        socket = new Socket();
     }
 
-    /**
-     * 
-     */
+
     public void executer() {
-        // TODO implement here
+
     }
 
-    /**
-     * 
-     */
+
     public void undo() {
-        // TODO implement here
-    }
 
+    }
 }

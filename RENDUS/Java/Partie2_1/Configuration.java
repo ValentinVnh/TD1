@@ -1,23 +1,15 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
-import java.util.*;
 
-/**
- * 
- */
 public class Configuration extends SocketState {
 
-    /**
-     * Default constructor
-     */
-    public Configuration() {
+    public Configuration(){
+
     }
 
-    /**
-     * @param socket
-     */
-    public void handleConfig(Socket socket) {
-        // TODO implement here
+    @Override
+    public void handleConfiguration(Socket socket){
+        socket.setState(new Connectee());
+        System.out.println("Socket connect");
     }
-
 }

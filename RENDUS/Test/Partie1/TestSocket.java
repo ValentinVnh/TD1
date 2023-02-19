@@ -1,8 +1,4 @@
-package RENDUS.Test;
-
-import RENDUS.Java.Partie1.*;
-
-//import org.junit.jupiter.api.Test;
+package Partie1;
 
 public class TestSocket {
 

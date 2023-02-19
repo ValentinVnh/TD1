@@ -1,30 +1,22 @@
-package RENDUS.Java.Partie2_1;
+package Partie2_1;
 
-import java.util.*;
 
-/**
- * 
- */
+
 public class Ecoute extends SocketState {
 
-    /**
-     * Default constructor
-     */
     public Ecoute() {
     }
 
-    /**
-     * @param socket
-     */
+    @Override
     public void handleAccept(Socket socket) {
-        // TODO implement here
+        socket.setState(new Configuration());
+        System.out.println("Socket Config");
     }
 
-    /**
-     * @param socket
-     */
+    @Override
     public void handleClose(Socket socket) {
-        // TODO implement here
+        socket.setState(new Fermee());
+        System.out.println("Socket Close");
     }
 
 }
