@@ -15,11 +15,6 @@ public class CommandeAccept extends CommandeGeneraleSocket {
 
     @Override
     public void executer() {
-        socket.accept();
-    }
-
-    @Override
-    public void undo() {
-        socket.close();
+        socket.listen();
     }
 }

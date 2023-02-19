@@ -19,7 +19,6 @@ public class CommandeGeneraleSocket implements Commande {
 
     }
 
-
     public void undo() {
 
     }

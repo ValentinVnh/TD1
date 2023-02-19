@@ -36,6 +36,8 @@ public class Socket {
         this.state.handleConfiguration(this);
     }
 
+
+
     public void setState(SocketState state) {
         this.state = state;
     }

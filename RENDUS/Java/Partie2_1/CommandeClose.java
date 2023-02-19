@@ -16,4 +16,9 @@ public class CommandeClose extends CommandeGeneraleSocket {
     public void executer() {
         socket.close();
     }
+
+    @Override
+    public void undo() {
+        socket.listen();
+    }
 }

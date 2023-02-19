@@ -14,9 +14,14 @@ public class CommandeConnect extends CommandeGeneraleSocket {
         this.socket = socket;
     }
 
-
-    public void execute() {
+    @Override
+    public void executer() {
         socket.connect();
+    }
+
+    @Override
+    public void undo() {
+        socket.configuration();
     }
 
 }
